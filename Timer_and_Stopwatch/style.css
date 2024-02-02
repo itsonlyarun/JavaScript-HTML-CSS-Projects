@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Poppins:wght@200;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    background-color: #ace799;
+    font-family: 'Courier Prime', monospace;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+div{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -----------Stopwatch---------- */
+
+.stopwatch{
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 40px 0;
+    color: #fff;
+    margin: 0 auto 0;
+    box-shadow: 0 10px 0 rgb(0,0,0,0.2);
+}
+
+h1{
+    font-size: 60px;
+    color: #000;
+    font-weight: 700;
+}
+
+.buttons{
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+}
+.buttons .images{
+    width: 50px;
+    margin: 0 20px ;
+    cursor: pointer;
+}
+
+.buttons img:nth-child(2){
+    width: 80px;
+}
+
+/* ----------------Timer------------ */
+
+.timer{
+    margin-right: 5vw;
+}
+
+
+h2{
+    font-size: 50px;
+    color: #000;
+    font-weight: 600;
+}
+
+
+p{
+    height: 100px;
+    width: 600px;
+    background-image: linear-gradient(#16bffd, #cb3066);
+    box-shadow: inset 0 0 10px #000000;
+    color: white;
+    line-height: 100px;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0px;
+    box-shadow: 1px 1px 0 #000,
+                2px 2px 0 #000,
+                3px 3px 0 #000,
+                4px 4px 0 #000,
+                5px 5px 0 #000,
+}

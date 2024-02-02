@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ---------Stopwatch----------- -->
+    <div class="stopwatch" >   
+        <div class="buttons">
+            <h1>Stopwatch</h1>
+            <h1 id="displayTime">00 : 00 : 00</h1>
+            <div class="images">
+                <img src="./Assets/stop.png" alt="" srcset="" onclick="watchStop()">
+                <img src="./Assets/start.png" alt="" srcset="" onclick="watchStart()">
+                <img src="./Assets/reset.png" alt="" srcset="" onclick="watchReset()">
+            </div>
+        </div>
+    </div>
+    <!-- ---Timer------ -->
+    <div class="timer">
+        <h1>Timer</h1>
+        <h2>Countdown Begins</h1>
+        <p id="demo">        
+        </p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

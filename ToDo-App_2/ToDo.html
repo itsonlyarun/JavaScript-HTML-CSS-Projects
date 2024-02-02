@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="./todo.css">
+    <style>
+        body{
+            font-family: Arial;
+        }
+        #main-heading{
+            text-align: center;
+        }
+
+        .grid-container{
+            display: grid;
+            grid-template-columns: 200px 150px 100px;
+            column-gap: 10px;
+            row-gap: 10px;
+            margin-top: 10px;
+            align-items: center;
+        }
+
+        #todo-input,#todo-date{
+            font-size: 15px;
+            padding: 10px 5px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+
+        .btn-todo{
+            background-color: rgb(27, 138, 5);
+            font-size: 15px;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            padding: 10px 0px;
+            cursor: pointer;
+        }
+
+        .btn-delete{
+            background-color: rgb(126, 7, 7);
+            color: white;
+            border: none;
+            border-radius: 7px;
+            padding: 10px 0px;
+            cursor: pointer;
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="main-headig">ToDo App</h1>
+    
+    <div class="grid-container">
+        <input id="todo-input" type="text" placeholder="Enter ToDo here" >
+        <input type="date" name="" id="todo-date">
+        <!-- <input type="datetime-local" name="" id=""> -->
+        <button class="btn-todo" onclick="addTodo()">Add</button>
+    </div>
+
+
+    <div id="todo-container" class="grid-container"></div>
+    <!-- <p id="todo-items"></p> -->
+
+
+    <script src="./todo.js"> </script>
+</body>
+</html>

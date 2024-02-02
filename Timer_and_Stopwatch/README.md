@@ -1,1 +1,1 @@
-# Code_Clause_Project.2_Timer_and_Stopwatch
+# Timer_and_Stopwatch
